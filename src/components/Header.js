@@ -9,7 +9,7 @@ const Header = (props) => {
     }
    
     return (
-        <header>
+        <header className="header">
             <NavLink to='/'><h1>ClassManger</h1></NavLink>
             {props.user.id ? <button onClick={clickHandler}>log out</button> : <NavLink to='/login'>Log-in</NavLink>}
             {props.user.type && <NavLink to='/MySpace'>Personal Space</NavLink>} 

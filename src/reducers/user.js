@@ -11,10 +11,11 @@ const userReducer = (state = defaultAuthState, action) => {
                 const passwordMatch = student.password === action.password;
                 return userNameMatch && passwordMatch;
             });
-          
-
+            if(!student){
+                return {}
+            }
             return {
-                id: student ? student.id : undefined,
+                id: student.id ,
                 firstName:student.firstName,
                 lastName:student.lastName,
                 type: 'student'
@@ -25,8 +26,11 @@ const userReducer = (state = defaultAuthState, action) => {
                 const passwordMatch = teacher.password === action.password;
                 return userNameMatch && passwordMatch;
             });
+            if(!teacher){
+                return {};
+            }
             return {
-                id: teacher ? teacher.id : undefined,
+                id:teacher.id ,
                 firstName:teacher.firstName,
                 lastName:teacher.lastName,
                 type: 'teacher'

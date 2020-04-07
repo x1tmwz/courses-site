@@ -15,14 +15,19 @@ const courseReducer = (state = courses, action) => {
         case "SIGN_IN":
             return state.map((course) => {
                 if (course.id === action.courseId) {
-                    return {
-                        ...course,
-                        students: course.students.push({
-                            id: action.userId,
-                            firstName: action.firstName,
-                            lastName: action.lastName,
-                            grade: 0
-                        })
+                    const student = course.students.find((student) => student.id === action.userId)
+                    console.log(student);
+                    if (!student) {
+                        return {
+                            ...course,
+                            students: [...course.students,
+                            {
+                                id: action.userId,
+                                firstName: action.firstName,
+                                lastName: action.lastName,
+                                grade: 0
+                            }]
+                        }
                     }
                 }
                 return course

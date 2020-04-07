@@ -4,14 +4,14 @@ const signOff =(courseId,userId)=>({
     userId
 })
 const signIn =(courseId,userId,firstName,lastName)=>({
-    type:"SIGN_OFF",
+    type:"SIGN_IN",
     courseId,
     userId,
     firstName,
     lastName
 })
 const setGrade =(courseId,teacherId,studentId,grade)=>({
-    type:"SIGN_OFF",
+    type:"SET_GRADE",
     courseId,
     teacherId,
     studentId,

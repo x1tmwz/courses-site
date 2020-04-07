@@ -15,6 +15,7 @@ const MySpace = (props) => {
                 if (props.user.type === 'teacher') {
                     return <TeacherCourseItem
                         key={course.id}
+                        courseId={course.id}
                         name={course.name}
                         students={course.students}
                         schedule={course.schedule}
@@ -31,6 +32,7 @@ const MySpace = (props) => {
                     />
 
                 }
+                return <p></p>;
 
 
             })}

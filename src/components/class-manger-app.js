@@ -8,7 +8,9 @@ const store = configStore();
 const ClassManger = () => {
     return (
         <Provider store={store}>
-            <AppRouter />
+        <div className="wrapper">
+          <AppRouter />
+        </div>
         </Provider>
     );
 }
