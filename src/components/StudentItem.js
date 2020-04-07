@@ -16,18 +16,25 @@ const StudentItem = ({
     const signOffHandler = () => {
         courseSignOff(courseId, studentId);
     }
-    const showScheduleHandler=()=>{
+    const showScheduleHandler = () => {
         setShowSchedule(!isShowSchedule);
     }
 
     return (
         <div>
-            <h1>{name}</h1>
-            <p>grade:{grade? grade : "there is no grade yet"}</p>
-            <button onClick={showScheduleHandler}>Schedule</button>
-            {isShowSchedule && <Schedule schedule={schedule}/>}
-            <button onClick={signOffHandler}>Sign off</button>
+            <div className="item_wrap item--student">
+                <h1>{name}</h1>
+                <p className="text--bold">Grade:{grade ? grade : "there is no grade yet"}</p>
+                <div className="column_wrap">
+                    <button onClick={showScheduleHandler} className="button--black">Schedule</button>
+                    {isShowSchedule && <Schedule schedule={schedule} />}
+                </div>
+                <button onClick={signOffHandler} className="button--black">Sign off</button>
+            </div>
+
+
         </div>
+
     );
 }
 const mapDispacthToProps = (dispatch) => ({

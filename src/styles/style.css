@@ -1,4 +1,9 @@
 @import './base/base.css';
 @import './components/container.css';
 @import './components/button.css';
-@import './components/header.css'
+@import './components/header.css';
+@import './components/link.css';
+@import './components/item.css';
+@import './components/form.css';
+@import './components/selector.css';
+@import './components/text.css';

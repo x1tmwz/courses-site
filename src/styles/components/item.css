@@ -1,0 +1,54 @@
+.item_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #cacccd;
+    margin: 1rem;
+    background-color: lightgray;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+}
+
+.item_functions {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.item--student {
+    align-items: baseline;
+}
+
+.item--teacher--student__wrap {
+    width: 100%;
+}
+
+.item--teacher--student__wrap p {
+    font-weight: bold;
+}
+
+.item--teacher--student {
+    background-color: azure;
+    margin: 0;
+}
+
+.item--teacher--student__input {
+    border: 1px solid #cacccd;
+    height: 20px;
+    width: 100px;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.item--teacher--student__error {
+    word-break: break-all;
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .item--teacher--student__wrap p {
+        word-break: break-all;
+    }
+}

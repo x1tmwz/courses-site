@@ -16,7 +16,6 @@ const courseReducer = (state = courses, action) => {
             return state.map((course) => {
                 if (course.id === action.courseId) {
                     const student = course.students.find((student) => student.id === action.userId)
-                    console.log(student);
                     if (!student) {
                         return {
                             ...course,

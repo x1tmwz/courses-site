@@ -1,30 +1,30 @@
 const courses =[
     {
         id:'1',
-        name:'economics',
+        name:'Economics',
         teacherId:'1',
         students:[{
             id:'1',
-            firstName:'namma',
-            lastName:'uliel',
+            firstName:'Namma',
+            lastName:'Uliel',
             grade:90
         }
 
         ],
         schedule:[{
-            day:'sunday',
+            day:'Sunday',
             time:{
                 start:'15:00',
                 end:'17:00'
             }
         },{
-            day:'monday',
+            day:'Monday',
             time:{
                 start:'15:00',
                 end:'17:00'
             }
         },{
-            day:'tuesday',
+            day:'Tuesday',
             time:{
                 start:'15:00',
                 end:'17:00'
@@ -33,30 +33,30 @@ const courses =[
     ]
     },{
         id:'2',
-        name:'math',
+        name:'Math',
         teacherId:'1',
         students:[{
             id:'2',
-            firstName:'tomer',
-            lastName:'meyer',
+            firstName:'Tomer',
+            lastName:'Meyer',
             grade:100
         }
 
         ],
         schedule:[{
-            day:'monday',
+            day:'Monday',
             time:{
                 start:'9:00',
                 end:'12:00'
             }
         },{
-            day:'wednesday',
+            day:'Wednesday',
             time:{
                 start:'9:00',
                 end:'12:00'
             }
         },{
-            day:'friday',
+            day:'Friday',
             time:{
                 start:'9:00',
                 end:'12:00'
@@ -64,25 +64,25 @@ const courses =[
         }]
     },{
         id:'3',
-        name:'english',
+        name:'English',
         teacherId:'2',
         students:[
 
         ],
         schedule:[{
-            day:'sunday',
+            day:'Sunday',
             time:{
                 start:'12:00',
                 end:'14:00'
             }
         },{
-            day:'wednesday',
+            day:'Wednesday',
             time:{
                 start:'12:00',
                 end:'14:00'
             }
         },{
-            day:'thursday',
+            day:'Thursday',
             time:{
                 start:'12:00',
                 end:'14:00'

@@ -3,8 +3,8 @@ const teachers =[
         id:'1',
         userName:'teacher1',
         password:'123456',
-        firstName:'omerAdam',
-        lastName:'zadok'
+        firstName:'Omer',
+        lastName:'Adam'
         
 
     },
@@ -12,8 +12,8 @@ const teachers =[
         id:'2',
         userName:'teacher2',
         password:'123456',
-        firstName:'dan',
-        lastName:'panorma'
+        firstName:'Dan',
+        lastName:'Panorma'
        
 
     }

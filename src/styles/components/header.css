@@ -1,17 +1,21 @@
 .header {
   background: #284262;
-  
 }
 
 .header__content {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding:1.6rem 0;
+  padding:1.6rem;
 }
 
 .header__title {
   color: white;
+  font-weight:100;
   text-decoration: none;
-
+}
+.header__title span{
+  background-color: #aacaef;
+  border: 1px #cacccd solid;
+  font-weight:bold;
 }

@@ -8,8 +8,7 @@ import StudentItem from './StudentItem';
 const MySpace = (props) => {
     return (
         <div>
-            <h1>My personal Space</h1>
-            <p>Welcome {`${props.user.firstName} ${props.user.lastName}`} </p>
+            <h1>Welcome {`${props.user.firstName} ${props.user.lastName}` } to yours personal space</h1>
             <h2>Your courses</h2>
             {props.courses.map((course) => {
                 if (props.user.type === 'teacher') {

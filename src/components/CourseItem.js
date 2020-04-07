@@ -12,13 +12,19 @@ const CourseItem = ({ name, teacher, studentsAmount, schedule, courseId, user, s
         startSignIn(courseId, user.id, user.firstName, user.lastName);
     }
     return (
-        <div>
+        <div className="item_wrap">
             <h1>{name}</h1>
-            <h2> Teacher:{`${teacher.firstName}  ${teacher.lastName} `}</h2>
-            <h3>Students in course:{studentsAmount}</h3>
-            <button onClick={showScheduleHandler}>Schedule</button>
-            {isShowSchedule && <Schedule schedule={schedule} />}
-            {(user.id && user.type === "student") && <button onClick={signInHandler}>Sign in</button>}
+            <div className="item_content">
+                <h2> Teacher:{`${teacher.firstName}  ${teacher.lastName} `}</h2>
+                <h3>Students in course:{studentsAmount}</h3>
+                <div>
+                    <div className="item_functions">
+                        <button onClick={showScheduleHandler} className='button--black'>Schedule</button>
+                        {(user.id && user.type === "student") && <button onClick={signInHandler} className='button--black'>Sign in</button>}
+                    </div>
+                    {isShowSchedule && <Schedule schedule={schedule} />}
+                </div>
+            </div>
         </div>
     );
 }
